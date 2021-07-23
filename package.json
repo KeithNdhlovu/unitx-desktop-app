@@ -1,0 +1,43 @@
+{
+  "name": "unitx-app",
+  "version": "1.0.0",
+  "description": "The App!",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "publish:win-linux": "electron-builder -wl -p always",
+    "publish:mac": "electron-builder -m -p always"
+  },
+  "repository": "https://github.com/KeithNdhlovu/unitx-desktop-app-releases",
+  "build": {
+    "appId": "za.co.unitx",
+    "productName": "UnitX",
+    "directories": {
+      "buildResources": "assets/icons"
+    },
+    "linux": {
+      "target": {
+        "target": "deb"
+      }
+    },
+    "win": {
+      "publisherName": "UnitX (Pty) Ltd",
+      "icon": "assets/icons/icon.png"
+    },
+    "publish": [
+      {
+        "provider": "github",
+        "repo": "unitx-desktop-app-releases"
+      }
+    ]
+  },
+  "author": "Jakub Blaszcykoswki",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "~11.0.0",
+    "electron-builder": "~22.9.1"
+  },
+  "dependencies": {
+    "electron-updater": "^4.3.9"
+  }
+}
