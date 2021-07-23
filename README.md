@@ -397,3 +397,14 @@ My favorite packages in the electron world
 ```
 
 A  full guide on how to create and publish your app can be found on [https://www.electron.build/](https://www.electron.build/)
+
+# Try this project out
+
+You can run this project by downloading or cloning this repo, and following the bellow instructions
+
+```shell
+$ git clone https://github.com/KeithNdhlovu/unitx-desktop-app
+$ cd unitx-desktop-app
+$ npm install
+$ npm start
+```
