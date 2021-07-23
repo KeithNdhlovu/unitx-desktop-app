@@ -8,7 +8,7 @@
     "publish:win-linux": "electron-builder -wl -p always",
     "publish:mac": "electron-builder -m -p always"
   },
-  "repository": "https://github.com/KeithNdhlovu/unitx-desktop-app-releases",
+  "repository": "https://github.com/KeithNdhlovu/unitx-desktop-app",
   "build": {
     "appId": "za.co.unitx",
     "productName": "UnitX",
@@ -27,11 +27,14 @@
     "publish": [
       {
         "provider": "github",
-        "repo": "unitx-desktop-app-releases"
+        "repo": "unitx-desktop-app"
       }
     ]
   },
-  "author": "Jakub Blaszcykoswki",
+  "author": {
+    "name": "Jakub Blaszcykoswki",
+    "email": "keith@unitx.co.za"
+  },
   "license": "MIT",
   "devDependencies": {
     "electron": "~11.0.0",
