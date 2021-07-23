@@ -334,7 +334,7 @@ services:
             - ~/.cache/electron-builder:/root/.cache/electron-builder
             # - ~/Desktop/certs/your-cool-cert.pfx:/.your-certs/your-cool-cert.pfx
         environment:
-            - GH_TOKEN=40ab6bb3b73277a920c83564df5a213b69ea1ea6
+            - GH_TOKEN=github-personal-access-token-aka-PAT
             - ELECTRON_CACHE=/root/.cache/electron
             - ELECTRON_BUILDER_CACHE=/root/.cache/electron-builder
             # - CSC_LINK=/.your-certs/your-cool-cert.pfx
@@ -354,7 +354,7 @@ we can simply run
 
 ```shell
 $ export CSC_IDENTITY_AUTO_DISCOVERY=false #disable auto code signing
-$ export GH_TOKEN=40ab6bb3b73277a920c83564df5a213b69ea1ea6
+$ export GH_TOKEN=github-personal-access-token-aka-PAT
 $ npm run publish:mac
 ```
 
